@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <title>Validarea formularelor cu HTML5 si JavaScript</title>
+
+    <script type="text/javascript">
+      function validezaForma() {
+        var frm = document.formaInscriere;
+        var valid = true;
+        var parola = frm.parola.value;
+        var parolaVerif = frm.parolaVerif.value;
+        if (parola != parolaVerif){
+          alert("Parolele nu coincid");
+          frm.parola.focus();
+          valid = false;
+        }
+        return valid;
+      }
+    </script>
+  </head>
+  <body>
+    <form name="formaInscriere"  method="POST"
+          onsubmit="return validezaForma();">
+      <fieldset>
+        <legend>Formular Inregistrare</legend>
+        <p>
+          <label for="nume">Nume<sup>*</sup>:</label>
+          <input type="text" id="nume" name="nume" value=""
+                  required minlength="2" maxlength="20"  />
+        </p>
+        <p>
+          <label for="telefon">Telefon:</label>
+          <input type="tel" id="telefon" name="telefon" value=""
+            pattern="(\+4)?0[0-9]{9}"
+            title="Numarul de telelon de forma +407123456789 sau 07123456789" />
+        </p>
+        <p>
+          <label for="email">Email<sup>*</sup>:</label>
+          <input type="email" id="email"  name="email" value=""
+                 placeholder="user@exemplu.com" required/>
+        </p>
+        <p>
+          <label for="parola">Parola<sup>*</sup>:</label>
+          <input type="password" id="parola" name="parola"
+            value="" minlength="5" required
+            title="Parola trebuie sa aiba minim 5 caractere"/>
+        </p>
+        <p>
+          <label for="parolaVerif">Reintroduceti Parola<sup>*</sup>:</label>
+          <input type="password" id="parolaVerif" name="parolaVerif"
+            value="" minlength="5" required
+            title="Parola trebuie sa aiba minim 5 caractere"/>
+        </p>
+        <p>
+          <label for="dataNasterii">Data Nasterii<sup>*</sup>:</label>
+          <!-- 
+          <input type="date" id="dataNasterii" name="dataNasterii" value="" >
+          -->
+          <input type="text" id="dataNasterii" name="dataNasterii" value=""
+            size="10" pattern="\d{1,2}\/\d{1,2}\/\d{4}"
+            placeholder="zz/ll/aaaa"
+            title="Data nasterii in formatul zz/ll/aaaa"
+            required/>
+        </p>
+        <input type="submit" value="Trimite" />
+        <input type="reset" value="Reset" />
+      </fieldset>
+    </form>
+  </body>
+</html>

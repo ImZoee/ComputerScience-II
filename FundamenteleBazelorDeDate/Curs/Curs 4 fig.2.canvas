@@ -1,0 +1,36 @@
+{
+	"nodes":[
+		{"id":"8ccd726832cfa85d","type":"text","text":"COD_CLIENTI#","x":-60,"y":-256,"width":200,"height":60},
+		{"id":"f9155e6557e63db5","type":"text","text":"ADRESA","x":140,"y":-256,"width":160,"height":60},
+		{"id":"a25bb984fcd8bc5c","type":"text","text":"DATA_LIVR","x":300,"y":-160,"width":140,"height":60},
+		{"id":"f8c810a099ff9d8a","type":"text","text":"VALOARE","x":440,"y":-160,"width":140,"height":60},
+		{"id":"07462c9561684191","type":"text","text":"COD_COMANDA#","x":-60,"y":-160,"width":200,"height":60},
+		{"id":"9dfb645d695b3bba","type":"text","text":"DATA_INREG","x":140,"y":-160,"width":160,"height":60},
+		{"id":"875372dd209f0e74","type":"text","text":"CANT","x":300,"y":-60,"width":140,"height":60},
+		{"id":"847283c0c3ef7ca7","type":"text","text":"VAL","x":440,"y":-60,"width":140,"height":60},
+		{"id":"b11b5ba89d5afc2a","type":"text","text":"COD_COMANDA#","x":-60,"y":-60,"width":200,"height":60},
+		{"id":"2d849884a915af88","type":"text","text":"COD_PROD#","x":140,"y":-60,"width":160,"height":60},
+		{"id":"4d752acc7688af47","type":"text","text":"CLIENTI","x":-300,"y":-256,"width":129,"height":60},
+		{"id":"f1197be4d3fad310","type":"text","text":"COMENZI","x":-300,"y":-160,"width":129,"height":60},
+		{"id":"0d8e8fd42ae5731c","type":"text","text":"LEG","x":-300,"y":-60,"width":129,"height":60},
+		{"id":"1b0f4906de639ca2","type":"text","text":"PRODUSE","x":-300,"y":40,"width":129,"height":60},
+		{"id":"40348d74f7aef16d","type":"text","text":"COD_PROD#","x":-60,"y":40,"width":200,"height":60},
+		{"id":"afeffdad9bbaa95c","type":"text","text":"DESCRIERE","x":140,"y":40,"width":160,"height":60},
+		{"id":"d01ed1b882bff582","type":"text","text":"VAL\n","x":300,"y":40,"width":140,"height":60},
+		{"id":"ec3ead0e031339b2","type":"text","text":"ALTE_INF","x":300,"y":-256,"width":140,"height":60}
+	],
+	"edges":[
+		{"id":"f8ad16f240623f9f","fromNode":"f9155e6557e63db5","fromSide":"bottom","toNode":"9dfb645d695b3bba","toSide":"top"},
+		{"id":"a62f809ac9f8461a","fromNode":"9dfb645d695b3bba","fromSide":"top","toNode":"f9155e6557e63db5","toSide":"bottom"},
+		{"id":"cbcccbd95e110781","fromNode":"2d849884a915af88","fromSide":"top","toNode":"9dfb645d695b3bba","toSide":"bottom"},
+		{"id":"78732ef451b84f26","fromNode":"9dfb645d695b3bba","fromSide":"bottom","toNode":"2d849884a915af88","toSide":"top"},
+		{"id":"d10629eb0ad44500","fromNode":"2d849884a915af88","fromSide":"bottom","toNode":"afeffdad9bbaa95c","toSide":"top"},
+		{"id":"1e0a070ef2b7ec37","fromNode":"afeffdad9bbaa95c","fromSide":"top","toNode":"2d849884a915af88","toSide":"bottom"},
+		{"id":"3b0dc59abe991fbd","fromNode":"4d752acc7688af47","fromSide":"bottom","toNode":"f1197be4d3fad310","toSide":"top"},
+		{"id":"41ab839000d388d5","fromNode":"f1197be4d3fad310","fromSide":"top","toNode":"4d752acc7688af47","toSide":"bottom"},
+		{"id":"e55055581ff0b03c","fromNode":"f1197be4d3fad310","fromSide":"bottom","toNode":"0d8e8fd42ae5731c","toSide":"top"},
+		{"id":"831408b67784b4b9","fromNode":"0d8e8fd42ae5731c","fromSide":"top","toNode":"f1197be4d3fad310","toSide":"bottom"},
+		{"id":"6089c028db053d85","fromNode":"0d8e8fd42ae5731c","fromSide":"bottom","toNode":"1b0f4906de639ca2","toSide":"top"},
+		{"id":"deb0a2c280f5e625","fromNode":"1b0f4906de639ca2","fromSide":"top","toNode":"0d8e8fd42ae5731c","toSide":"bottom"}
+	]
+}

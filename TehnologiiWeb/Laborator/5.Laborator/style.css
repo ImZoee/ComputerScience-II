@@ -1,0 +1,46 @@
+body{
+    background-color: lightblue;
+    color:black;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+table{
+    border-collapse: collapse;
+}
+table, td{
+    border: 1px solid black;
+}
+th{
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+td.numar{
+    text-align: right;
+}
+
+tr.impar{
+    background-color: cadetblue;
+}
+
+tr.par{
+    background-color: white;
+}
+
+table.simple{
+    border:1px solid black;
+}
+
+table.simple th, table.simple td{
+    /*Munca de chinez
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    */
+    border: none;
+    border-bottom: 1px solid black;
+}
+table.highlight tr:hover{
+    background-color: azure;
+}

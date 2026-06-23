@@ -1,0 +1,9 @@
+body{
+    background-color: whitesmoke;
+}
+.head{
+    text-align: center;
+}
+.educatien ol{
+    list-style-type: lower-alpha;
+}

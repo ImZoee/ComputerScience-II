@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator Indice Masa Corporala</title>
+    <script>
+     
+     /* Calculeaza indicele de masa corporala */
+      function getIMC(inaltime, greutate) {
+        return greutate / (inaltime * inaltime);
+      }
+
+      /* Determina diagnosticul pe baza IMC-ului*/ 
+      function diagnostic(imc) {
+        var rezultat = "";
+        if (imc < 18.5) {
+          rezultat = "Subponderal";
+        } else if (imc <= 25) {
+          rezultat = "Greutate normala";
+        } else if (imc <= 30) {
+          rezultat = "Supraponderal";
+        } else if (imc <= 35) {
+          rezultat = "Obezitate (gradul I)";
+        } else if (imc <= 40) {
+          rezultat = "Obezitate (gradul II)";
+        } else {
+          rezultat = "Obezitate morbida";
+        }
+        return rezultat;
+      }
+
+      /* verifica ca x este numar */
+      function esteNumar(x){
+        if (isNaN(x)) {
+          return false;
+        } else {
+          return true;
+        }
+      }
+
+      
+
+      /* Proceseaza inputul din forma */
+      function calculeazaIMC() {        
+        var divIMC = document.getElementById("imc");
+        var divDiagnostic = document.getElementById("diagnostic");
+        
+        //Stergem rezultatul anterior
+        divIMC.innerHTML="";
+        divDiagnostic.innerHTML="";
+
+        //Preluam datele din forma
+        var forma = document.forms["formaIMC"];
+        var inaltime = forma["inaltime"].value;
+        var greutate = forma["greutate"].value;        
+        
+        //Validam datele din forma
+        if (!esteNumar(inaltime)){
+          alert("Inaltimea nu e numar");
+          forma.inaltime.focus();
+          return;
+        }
+        if (!esteNumar(greutate)){
+          alert("Greutatea nu e numar");
+          forma.greutate.focus();
+          return;
+        }
+
+        var imc = getIMC(inaltime, greutate);
+        var rezultatDiagnostic = diagnostic(imc);
+        
+        //Afisam in consola de debug 
+        console.log("Indicele de masa corporala: " + imc);
+        console.log("Diagnostic: " + rezultatDiagnostic);
+
+        //Afisam rezultatul evaluarii
+        divIMC.innerHTML="Indicele de masa corporala: " + imc;
+        divDiagnostic.innerHTML="Diagnostic: " +rezultatDiagnostic;
+      }
+    </script>
+  </head>
+
+  <!--
+
+    https://ro.wikipedia.org/wiki/Indice_de_mas%C4%83_corporal%C4%83
+
+    IMC = greutate (kg)/inaltime(m)^2
+
+    18,49 sau mai putin - Subponderal
+    intre 18,50 si 24,99 - Greutate normala
+    intre 25,00 si 29,99 - Supraponderal
+    intre 30,00 si 34,99 - Obezitate (gradul I)
+    intre 35,00 si 39,99 - Obezitate (gradul II)
+    40,00 sau mai mult - Obezitate morbida
+  -->
+
+  <body>
+    <h1>Calculator Indice Masa Corporala</h1>
+
+    <form id="formaIMC">
+      <fieldset>
+        <legend>Datele dumneavoastra</legend>
+        <p>
+          <label for="inaltime">Inaltimea:</label>
+          <input name="inaltime" id="inaltime" type="text" value="1.76" /> m
+        </p>
+        <p>
+          <label for="greutate">Greutatea:</label>
+          <input name="greutate" id="greutate" type="text" value="70" /> kg
+        </p>
+        <input type="button" value="Calculeaza" onclick="calculeazaIMC()" />
+        <input type="reset" value="Reset" />
+      </fieldset>
+    </form>
+    <div id="imc"></div>
+    <div id="diagnostic"></div>
+  </body>
+</html>

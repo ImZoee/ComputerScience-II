@@ -1,0 +1,13 @@
+{
+	"nodes":[
+		{"id":"b8c185f53657a5e8","x":-78,"y":-82,"width":178,"height":60,"type":"text","text":"Gata de executie\n'READY'"},
+		{"id":"ce00fc8e971f3a61","x":-420,"y":-82,"width":136,"height":60,"type":"text","text":"Blocat\n'BLOCKED'"},
+		{"id":"cf474fd70f49a7d2","x":-240,"y":-240,"width":140,"height":60,"type":"text","text":"In executie\n'RUNNING'"}
+	],
+	"edges":[
+		{"id":"d96a144462a0ec53","fromNode":"cf474fd70f49a7d2","fromSide":"right","toNode":"b8c185f53657a5e8","toSide":"top","label":"[1]"},
+		{"id":"03c4aef27502c815","fromNode":"b8c185f53657a5e8","fromSide":"left","toNode":"cf474fd70f49a7d2","toSide":"bottom","label":"[2]"},
+		{"id":"4ebd2b5d321fb40d","fromNode":"cf474fd70f49a7d2","fromSide":"left","toNode":"ce00fc8e971f3a61","toSide":"top","label":"[3]"},
+		{"id":"a413f00ae4a3d14b","fromNode":"ce00fc8e971f3a61","fromSide":"right","toNode":"b8c185f53657a5e8","toSide":"left","label":"[4]"}
+	]
+}

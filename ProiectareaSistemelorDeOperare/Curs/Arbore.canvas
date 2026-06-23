@@ -1,0 +1,29 @@
+{
+	"nodes":[
+		{"id":"26e6b9ae97d125a2","type":"text","text":"A","x":-164,"y":-240,"width":64,"height":60},
+		{"id":"87fed0e018fa12b5","type":"text","text":"U","x":-384,"y":20,"width":64,"height":60,"color":"6"},
+		{"id":"389f95c860a92a3f","type":"text","text":"V","x":-256,"y":20,"width":64,"height":60,"color":"6"},
+		{"id":"f0275fee32ea7cc1","type":"text","text":"Z","x":-144,"y":-60,"width":64,"height":60,"color":"6"},
+		{"id":"be8ad4ddc250d126","type":"text","text":"D","x":-16,"y":-60,"width":64,"height":60},
+		{"id":"f1d326f5ff2f8983","type":"text","text":"F","x":-304,"y":-60,"width":64,"height":60},
+		{"id":"26747b82439ef357","type":"text","text":"E","x":-80,"y":20,"width":64,"height":60},
+		{"id":"df2f1b0815c1e0ba","type":"text","text":"X","x":-144,"y":100,"width":64,"height":60,"color":"6"},
+		{"id":"a8831d57f93d4ce7","type":"text","text":"Y","x":-16,"y":100,"width":64,"height":60,"color":"6"},
+		{"id":"9ee633104351e827","type":"text","text":"C","x":-80,"y":-140,"width":64,"height":60},
+		{"id":"346fec70246adcd1","type":"text","text":"B","x":-240,"y":-140,"width":64,"height":60},
+		{"id":"e50984f22acd431b","type":"text","text":"LEGENDA\nCuloare mov => Fisiere","x":80,"y":-130,"width":250,"height":100},
+		{"id":"88c2e2d0de82f136","type":"text","text":"\"/\" si \"`\\`\" sunt radacini\n. = catalog curent\n..=catalog parinte","x":80,"y":-240,"width":250,"height":100}
+	],
+	"edges":[
+		{"id":"e6161f68d2633cc8","fromNode":"26e6b9ae97d125a2","fromSide":"left","toNode":"346fec70246adcd1","toSide":"top"},
+		{"id":"b45c4d2bd58e4ad0","fromNode":"26e6b9ae97d125a2","fromSide":"right","toNode":"9ee633104351e827","toSide":"top"},
+		{"id":"1a8edd6202679810","fromNode":"9ee633104351e827","fromSide":"left","toNode":"f0275fee32ea7cc1","toSide":"top"},
+		{"id":"4346934b433b88b8","fromNode":"9ee633104351e827","fromSide":"right","toNode":"be8ad4ddc250d126","toSide":"top"},
+		{"id":"1f33772f7072968f","fromNode":"be8ad4ddc250d126","fromSide":"left","toNode":"26747b82439ef357","toSide":"top"},
+		{"id":"3df0d24b7bf6016c","fromNode":"26747b82439ef357","fromSide":"left","toNode":"df2f1b0815c1e0ba","toSide":"top"},
+		{"id":"fe9ced7de5590f5c","fromNode":"26747b82439ef357","fromSide":"right","toNode":"a8831d57f93d4ce7","toSide":"top"},
+		{"id":"7576a5b1e5423381","fromNode":"346fec70246adcd1","fromSide":"left","toNode":"f1d326f5ff2f8983","toSide":"top"},
+		{"id":"45176207fc2e780a","fromNode":"f1d326f5ff2f8983","fromSide":"left","toNode":"87fed0e018fa12b5","toSide":"top"},
+		{"id":"906da4c98bf71996","fromNode":"f1d326f5ff2f8983","fromSide":"right","toNode":"389f95c860a92a3f","toSide":"top"}
+	]
+}

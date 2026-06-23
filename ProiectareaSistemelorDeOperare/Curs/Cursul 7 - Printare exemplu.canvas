@@ -1,0 +1,25 @@
+{
+	"nodes":[
+		{"id":"1afe233fcdbb58d5","type":"text","text":"","x":-137,"y":-301,"width":250,"height":60},
+		{"id":"f667d28c9b781610","type":"text","text":"","x":-137,"y":-241,"width":250,"height":60},
+		{"id":"38021cc4e9f27e10","type":"text","text":"","x":-137,"y":-180,"width":250,"height":60},
+		{"id":"6c3dda36c906e934","type":"text","text":"","x":-137,"y":-120,"width":250,"height":60},
+		{"id":"2da8b270b8cec4d1","type":"text","text":"","x":-137,"y":-60,"width":250,"height":60},
+		{"id":"32ffb0d8cd2fab65","type":"text","text":"","x":-137,"y":0,"width":250,"height":60},
+		{"id":"a48ddf93b3c319e1","type":"text","text":"","x":-137,"y":60,"width":250,"height":60},
+		{"id":"f4076c1935ca8c08","type":"text","text":"Queue, cu un comportament de FIFO, implement ca un buffer circular în memorie","x":-137,"y":180,"width":250,"height":120},
+		{"id":"e9792ff6aa33d0e9","type":"text","text":"<center>PRINT</center>\n","x":200,"y":-120,"width":250,"height":60},
+		{"id":"8c377fa76574df92","type":"text","text":"# A","x":-320,"y":-181,"width":80,"height":70},
+		{"id":"d6cc815d9797fa7b","type":"text","text":"# B","x":-320,"y":-41,"width":80,"height":70},
+		{"id":"5cdfd2445ba50f45","type":"text","text":"<center>\"File A\"</center>","x":-600,"y":-176,"width":250,"height":60},
+		{"id":"c162b8d3ce215971","type":"text","text":"<center>\"File B\"</center>","x":-600,"y":-36,"width":250,"height":60},
+		{"id":"082d4fe81da9cf65","type":"text","text":"```\n...\nindex = IN;\nQ[index] = 'File...';\n...\n```\n\nAcest lucru fac toate procesele care doresc să se folosească de imprimantă","x":-840,"y":-519,"width":289,"height":249},
+		{"id":"0a2e218a7e03d809","type":"text","text":"# OUT","x":200,"y":-394,"width":140,"height":74},
+		{"id":"01ea19fad497eafa","x":-292,"y":-375,"width":105,"height":74,"type":"text","text":"# IN"}
+	],
+	"edges":[
+		{"id":"7e12962b72987ef6","fromNode":"f4076c1935ca8c08","fromSide":"top","toNode":"a48ddf93b3c319e1","toSide":"bottom"},
+		{"id":"9415cc32583c3cff","fromNode":"0a2e218a7e03d809","fromSide":"bottom","toNode":"1afe233fcdbb58d5","toSide":"right"},
+		{"id":"b038b5295a9eab7e","fromNode":"01ea19fad497eafa","fromSide":"bottom","toNode":"38021cc4e9f27e10","toSide":"left"}
+	]
+}

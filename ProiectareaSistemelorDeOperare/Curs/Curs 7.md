@@ -1,0 +1,5 @@
+![[Cursul 7 - Printare exemplu.canvas|Cursul 7 - Printare exemplu]]
+
+Problema cu acest lucru este că lucruri se pot întâmpla aleatoriu. Când scriem programe, trebuie să ne asigurăm că ele merg în orice stare. Nu am o certitudine că lucrurile se vor întâmpla la fel, de fiecare dată. Mai simplu, e posibil ca procesul să fie tăiat fix în momentul în care începem procesul de printare, lucru foarte rău. Acestă situația se numește *condiție de concurență* sau *race condition*.
+Acest lucru se întâmplă când mai multe procese folosesc o resursă comună/partajată, precum imprimanta în exemplu nostru.
+Soluția nu este software, ci hardware. Pot să invalidez o întrerupere, dar acest lucru este trebuie realizat cu grijă. Sistemul de operare poate să includă primitive pentru a controla acest lucru automat.

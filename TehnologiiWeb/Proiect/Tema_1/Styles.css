@@ -1,0 +1,100 @@
+body{
+    background-color: #ffffff;
+    font-family: Verdana, Tahoma, sans-serif;
+    margin: 0;
+}
+nav{
+    padding: 30px;
+    text-align: right;
+    margin: 0;
+    border-bottom: 2px solid #000000;
+    background-color: #e2eefa;
+}
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li{
+    display: inline;
+    padding: 5px;
+}
+nav ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #339f9e;
+    transition: all 0.3s ease-in-out;
+    font-size: large;
+}
+nav ul li a:hover{
+    color:#3f3f3f;
+}
+.Home{
+    background-image: url("./images/background_home.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 75vh;
+    width: 100%;
+    margin-top:-50px;
+    border-bottom: 2px solid #000000;
+}
+.Home h3{
+    color: #349f9e;
+    padding-top: 15%;
+    padding-left: 5%;
+    padding-bottom: 25px;
+    text-decoration: none;
+    text-shadow: 2px 2px 2px#2c2c2c;
+    font-size: 50px;
+
+}
+.Home h3 .br{
+    display: inline-block;
+    text-decoration: none;
+    margin-left: 0%;
+}
+
+.Info {
+    margin-top: 2%;
+    margin-left: 2.5%; 
+    width: 27%;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: #ececec;
+    display: inline-block; 
+    vertical-align: top;
+}
+
+.AboutUs, .Plans, .Oferts {
+    width: 100%;  /*Ca sa ocupe toata caseta*/
+    border-collapse: collapse;
+}
+
+.AboutUs th, .Plans th, .Oferts th {
+    text-align: center;
+    font-size: larger;
+    padding-bottom: 20px;
+    color: #333;
+}
+.AboutUs td, .Plans td, .Oferts td{
+    font-size: medium;
+    color: #333;
+}
+
+footer{
+    margin-top: 7%;
+    padding: 15px 5px 0px;
+    border-top: 1px solid #000000;
+    text-align: right;
+    font-size: medium;
+}
+
+/* Servicii Medicale */
+.ServMedicale h3{
+    margin: 10px;
+    font-size: 30px;
+    text-align: center;
+    color: #339f9e;
+    text-shadow: 2px 1px 2px #000000;
+    text-decoration: underline;
+}
